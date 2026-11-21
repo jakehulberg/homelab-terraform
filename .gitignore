@@ -1,0 +1,39 @@
+# Provider plugins and module cache (re-downloaded by terraform init)
+.terraform/
+
+# State: lives in the remote backend, never in git
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Saved plans can contain secret values
+*.tfplan
+tfplan
+*.plan
+
+# Variable files can hold real values; commit only *.tfvars.example
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config and crash logs
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# Local secrets
+.env
+.env.*
+.infisical.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
